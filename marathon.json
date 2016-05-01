@@ -11,10 +11,7 @@
           "containerPort": 80,
           "servicePort": 0,
           "protocol": "tcp",
-          "name": "http",
-          "labels": {
-            "VIP_0": "192.168.1.1:80"
-          }
+          "name": "http"
         }
       ],
       "parameters": []
@@ -33,5 +30,8 @@
   ],
   "instances": 2,
   "cpus": 0.1,
-  "mem": 128
+  "mem": 128,
+  "labels": {
+    "HAPROXY_GROUP":"internal"
+  }
 }
