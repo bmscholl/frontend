@@ -9,7 +9,7 @@
       "portMappings": [
         {
           "containerPort": 80,
-          "servicePort": 0,
+          "servicePort": 80,
           "protocol": "tcp",
           "name": "http"
         }
@@ -32,6 +32,6 @@
   "cpus": 0.1,
   "mem": 128,
   "labels": {
-    "HAPROXY_GROUP":"internal"
+    "HAPROXY_GROUP":"external"
   }
 }
